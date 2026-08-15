@@ -20,6 +20,12 @@
 3. 重启 `dsh-web`；`dsh --profile web --dump-config` 应看到插件行且无警告
 4. 硬刷新 → 设置 → 插件 → 插件配置 → 展开「桌面通知」→ 点「点击授权」→ 允许
 
+## 📸 截图
+
+<img src="../../docs/images/notify-config-card.png" width="720" alt="插件配置卡片">
+
+<img src="../../docs/images/windows-toast.png" width="720" alt="Windows 通知弹窗">
+
 ## 宿主 API
 
 | 方法 | 路径 | 说明 |
