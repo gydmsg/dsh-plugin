@@ -1,0 +1,25 @@
+{
+  "name": "@dsh/plugin-workspace-files",
+  "version": "0.1.0",
+  "description": "DSH 树外插件：「空间」子界面 —— 当前会话工作区文件浏览器（浏览/预览/下载/删除）。host 半提供 /api/wf/* REST API 并强制工作区边界，client 半注册 conversation.view 槽位。零第三方运行时依赖。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "lib/client.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT"
+}
