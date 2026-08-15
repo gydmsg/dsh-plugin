@@ -41,6 +41,8 @@
 
 ## 🚀 安装（任意 DSH 部署通用）
 
+> ⚠️ **npm 一键安装（`dsh plugin add`）暂未发布** —— 正在准备中，马上会加；当前请按下方手工安装。
+
 以两个插件都装为例：
 
 1. 把插件目录放入目标 profile 的 `node_modules/@dsh/` 下
@@ -72,12 +74,6 @@
 ```sh
 cd packages/dsh-plugin-workspace-files && node --test test/*.test.mjs   # 9 项安全边界测试
 ```
-
-## 📦 npm 发布（路线图，未实施）
-
-目标形态：`dsh plugin --profile web add @dsh/plugin-workspace-files` 一键安装。
-计划：为每个包补齐 `dsh.bundle` 声明与版本发布流水线（npm publish）后，走 DSH 官方
-`dsh plugin add` 通道安装；在此之前请按上文「安装」方式手工放入 profile。
 
 ## 🗺 路线图
 
