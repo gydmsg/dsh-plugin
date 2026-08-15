@@ -1,5 +1,7 @@
 # dsh-plugin —— DeepSeek Harness (DSH) 树外插件集合库
 
+[English](README.en.md) | [中文](README.md)
+
 > 一个仓库收纳**所有开发完成、可发布的 DSH Web UI 树外双面插件**。
 > 全部为零侵入插件（host 半 + client 半），可安装进任意 DSH profile，不修改 DSH 源码。
 > 兼容 DSH **0.1.0-rc.6**（本库插件均在其上开发并验收通过）。
