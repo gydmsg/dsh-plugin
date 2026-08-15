@@ -1,0 +1,25 @@
+{
+  "name": "@dsh/plugin-notify",
+  "version": "0.1.0",
+  "description": "DSH 树外插件：Windows 桌面通知（Web Notification API）。DSH 需要用户回答（question/requested）或回答完成（turn/end）时向系统通知中心弹通知，点击聚焦回 DSH 页面。纯客户端逻辑，host 半仅作 loader 行（client-modules 扫描 dsh.client 声明）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "lib/client.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT"
+}
