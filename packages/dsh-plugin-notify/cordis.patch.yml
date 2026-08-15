@@ -1,0 +1,6 @@
+# @dsh/plugin-notify bundle patch —— 桌面通知插件行。
+# 同包双面：host 半提供 /api/notify/config 持久化开关；client 半注册
+# 「设置→插件→插件配置」卡片（settings.plugin.item 槽）并实现通知逻辑。
+- insert:
+    - id: plugin-notify
+      name: '@dsh/plugin-notify'
