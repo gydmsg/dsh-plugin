@@ -17,6 +17,14 @@
 - 每个路径经 `resolve` 规范化 + `realpath` 包含校验：绝对路径、`..` 逃逸、指向工作区外的符号链接**全部拒绝**；悬空符号链接仅允许在工作区内被删除
 - 边界逻辑集中在 `lib/index.js` 的 `inside()`（已导出，配套 9 项安全测试，`node --test test/*.test.mjs`）
 
+## 📸 截图
+
+<img src="../../docs/images/space-overview.png" width="720" alt="空间主界面">
+
+<img src="../../docs/images/markdown-preview.png" width="720" alt="Markdown 排版预览">
+
+<img src="../../docs/images/image-preview.png" width="720" alt="图片预览">
+
 ## 宿主 API（REST，经认证网关同源访问）
 
 | 方法 | 路径 | 说明 |
