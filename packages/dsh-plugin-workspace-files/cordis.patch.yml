@@ -1,0 +1,8 @@
+# @dsh/plugin-workspace-files bundle patch ——「空间」插件行。
+# 同包双面：host 半（/api/wf/* 路由）由本行 apply；client 半由 modules 扫描 dsh.client 声明。
+- insert:
+    - id: plugin-workspace-files
+      name: '@dsh/plugin-workspace-files'
+      config:
+        # 文本预览大小上限（字节），超出仅可下载。
+        previewMaxBytes: 524288
