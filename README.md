@@ -13,6 +13,32 @@
 
 > 每个插件目录内都有独立的 `README.md`（功能 / API / 安装 / 配置 / 开发 / 路线图），单独下载某个插件只需取对应目录。
 
+## 📸 截图
+
+### 「空间」工作区文件管理器
+
+**空间主界面**（轨迹右侧新增 tab）：
+
+<img src="docs/images/space-overview.png" width="720" alt="空间主界面">
+
+**Markdown 排版预览**（网页化渲染，非纯文本）：
+
+<img src="docs/images/markdown-preview.png" width="720" alt="Markdown 排版预览">
+
+**图片预览**：
+
+<img src="docs/images/image-preview.png" width="720" alt="图片预览">
+
+### Windows 桌面通知
+
+**插件配置卡片**（设置 → 插件 → 插件配置，与官方卡片同款样式）：
+
+<img src="docs/images/notify-config-card.png" width="720" alt="通知配置卡片">
+
+**Windows 通知弹窗**（需要用户回答时）：
+
+<img src="docs/images/windows-toast.png" width="720" alt="Windows 通知弹窗">
+
 ## 🚀 安装（任意 DSH 部署通用）
 
 以两个插件都装为例：
